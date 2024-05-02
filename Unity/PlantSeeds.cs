@@ -14,7 +14,7 @@ public class PlantSeeds : MonoBehaviour
     public UIController controller;
     public Text seedsCountText; // Referencia al elemento de texto para mostrar la cantidad de semillas
 
-    private ToolSelection farmingToolSelector; // Referencia al script de selecciÃ³n de herramienta
+    private ToolSelection farmingToolSelector; // Referencia al script de selección de herramienta
     public static int plantedSeeds = 0;
     private void Start()
     {
@@ -53,7 +53,7 @@ public class PlantSeeds : MonoBehaviour
     {
         plantedSeeds++;
         DeleteWheat.seedsCount--;
-        // Actualizar el texto en la interfaz de usuario para mostrar la cantidad actual de maÃ­z y semillas
+        // Actualizar el texto en la interfaz de usuario para mostrar la cantidad actual de maíz y semillas
         if (seedsCountText != null)
         {
             seedsCountText.text = "Seeds: " + DeleteWheat.seedsCount.ToString();
