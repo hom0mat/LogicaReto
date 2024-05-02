@@ -1,0 +1,12 @@
+org 0x000
+jmp main
+
+data
+	lives: bss 1
+	display: bss 1
+
+text
+org 0x010
+
+main: inp r1, lives ;
+	out r1, display ;
